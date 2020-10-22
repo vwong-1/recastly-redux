@@ -23,7 +23,7 @@ describe('Action dispatchers', function() {
       expect(changeVideo.firstCall.returnValue.type).to.equal('CHANGE_VIDEO');
     });
     it('should return an object with a "video" key equal to the video parameter', function() {
-      expect(changeVideo.firstCall.returnValue.video).to.equal(dummyData[0]);
+      expect(changeVideo.firstCall.returnValue.payload).to.equal(dummyData[0]);
     });
   });
   describe('videoList', function() {
@@ -44,7 +44,7 @@ describe('Action dispatchers', function() {
       expect(changeVideoList.firstCall.returnValue.type).to.equal('CHANGE_VIDEO_LIST');
     });
     it('should return an object with a "videos" key equal to the videos parameter', function() {
-      expect(changeVideoList.firstCall.returnValue.videos).to.equal(dummyData);
+      expect(changeVideoList.firstCall.returnValue.payload).to.equal(dummyData);
     });
   });
   describe('handleVideoSearch', function() {
