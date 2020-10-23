@@ -6,7 +6,7 @@ var videoListReducer = (state = [], action) => {
     case 'CHANGE_VIDEO_LIST':
       return action.payload || [];
     default:
-      return state
+      return state;
   }
 };
 

@@ -6,7 +6,7 @@ var currentVideoReducer = (state = null, action) => {
     case "CHANGE_VIDEO":
       return action.payload || null;
     default:
-      return state
+      return state;
   }
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import VideoListEntry from './VideoListEntry.js';
-
+/*
+ * Components grabs the input from container and uses them as the parameters
+ */
 var VideoList = ({ videos, handleVideoListEntryTitleClick }) => (
   <div className="video-list">
     {
